@@ -1,0 +1,114 @@
+// RESPONSIVE
+
+
+// MENU HORIZONTAL
+
+@each $etiquette, $dimension in $breakpoints {
+  @media screen and (min-width: $dimension){
+    .menu-#{$etiquette}-horizontal {
+
+        background: $color-red;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin: auto;
+
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .menu-slider-btn {
+            display: none;
+        }
+        .menu-slider-menu {
+            position: static;
+            background: none;
+            width: auto;
+            height: auto;
+        }
+
+
+
+
+        // PREMIER NIVEAU
+        > ul {
+            background: $color-red;
+            width: 100%;
+            display: flex;
+            > li {
+                flex-grow: $menuHorizLiensGrow;
+                margin-right: $menuHorizLiensMarge;
+                text-align: $menuHorizLiensTexteAlignement;
+                position: relative;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+                > a {
+                    font-family: $font-titre;
+                    color: $menuHorizLiensTexteCouleur;
+                    padding: $menuHorizLiensPadding;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// BANDEAU QUI DEBORDE EN TAILLE L
+@each $etiquette, $dimension in $breakpoints {
+  @media screen and (min-width: $dimension){
+    .menu-#{$etiquette}-bandeau {
+        width: calc(100% + 1em + 10px);
+        position: relative;
+        left: calc(-.5em - 5px);
+
+            &:before {
+                content: '';
+                display: block;
+                background: darken($color-red,20);
+                width: 20px;
+                height: 40px;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transform: skewY(45deg);
+                z-index: -1;
+            }
+            &:after {
+                content: '';
+                display: block;
+                background: darken($color-red,20);
+                width: 20px;
+                height: 40px;
+                position: absolute;
+                right: 0;
+                bottom: -10px;
+                transform: skewY(-45deg);
+                z-index: -1;
+            }
+        }
+    }
+}
+
+// DISPLAY NONE
+
+@each $etiquette, $dimension in $breakpoints {
+  @media screen and (min-width: $dimension){
+    .#{$etiquette}-displayNone {
+        display: none;
+        }
+    }
+}
+
+@each $etiquette, $dimension in $breakpoints {
+  @media screen and (min-width: $dimension){
+    .#{$etiquette}-displayBlock {
+        display: block;
+        }
+    }
+}

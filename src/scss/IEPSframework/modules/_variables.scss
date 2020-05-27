@@ -1,0 +1,89 @@
+// GRILLE VARIABLES:
+
+$grilleNombreColonnes: 12;
+$grilleGouttiere: 1em;
+
+$breakpoints: (
+    'xs' : '0',
+    's' : '600px',
+    'm' : '800px',
+    'l' : '1000px',
+    'xl' : '1200px',
+);
+
+// COULEURS:
+$bleu: #A9ECD9;
+$mauve: #E0C6E9;
+$mauveDark: #715D92;
+$blanc: #FDFBFF;
+
+
+// BOITE
+$boiteFixeDimension: 800px;
+$boitelargeur: 700px;
+$boiteTextePosts: 1100px;
+$boiteDimensionsBody: 1300px;
+
+// MENU + sous-menu dropdown
+
+$menuHorizLiensAlignement: space-between;
+$menuHorizLiensGrow: 1;
+$menuHorizLiensMarge: 1px;
+$menuHorizLiensTexteAlignement: center;
+$menuHorizLiensFondCouleur: orange;
+$menuHorizLiensTexteCouleur: #eee;
+$menuHorizLiensPadding: .3em;
+$menuHorizHoverLiensFondCouleur: darken(orange, 15);
+$menuHorizHoverLiensTexteCouleur: #fff;
+$menuHorizActifLiensFondCouleur: darken(orange, 15);
+$menuHorizActifLiensTexteCouleur: #fff;
+
+$menuDropDownLiensFondCouleur: lighten(orange, 20);
+$menuDropDownLiensTexteCouleur: #fff;
+$menuDropDownHoverLiensFondCouleur: darken(orange, 30);
+$menuDropDownHoverLiensTexteCouleur: #eee;
+$menuDropDownLiensPadding: 0.8em;
+
+
+// MENU SLIDER
+//     Bouton
+$menuSliderBtnTop: 2em;
+$menuSliderBtnLeft: 5em;
+$menuSliderBtnFondCouleur: orange;
+$menuSliderBtnPadding: 1em;
+$menuSliderBtnTexteCouleur: #eee;
+//         Bouton Hover
+$menuSliderBtnHoverFondCouleur: darken(orange, 15);
+$menuSliderBtnHoverTexteCouleur: #fff;
+//     Menu
+$menuSliderMenuLargeur: 200px;
+$menuSliderMenuHauteur: 100vh;
+$menuSliderMenuFondCouleur: #aaa;
+//     Menu Lien
+$menuSliderLienFondCouleur: #ccc;
+$menuSliderLienTexteCouleur: #eee;
+$menuSliderLienPadding: 0.8em;
+$menuSliderLienHoverFondCouleur: #aaa;
+$menuSliderLienHoverTexteCouleur: #fff;
+$menuSliderLienHoverPadding: 1em;
+
+
+
+// MERIDIAN SUN
+
+$color-red: #b05a5a;
+$color-gris-dark: #6b6b6b;
+$color-gris-light: #a0a0a0;
+$color-noir-page: #2e2e2e;
+$color-police-footer: #999;
+$color-background-form: lighten($color-gris-light, 30);
+$color-border-red-dark: darken($color-red, 10);
+$color-background-black: #191919;
+$color-background-grey: lighten($color-background-black, 20);
+
+
+$font-logo: 'Kaushan Script', cursive;
+$font-texte: 'Merriweather', serif;
+$font-titre: "MarketDeco";
+
+$color-border-footer: darken($color-gris-dark, 40);

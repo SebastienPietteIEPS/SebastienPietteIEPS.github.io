@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Meridian Sun - Post</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/IEPSframework/index.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="l-blackBackground">
+    <section class="shadow l-boiteResponsive xl-boiteResponsivePosition">
+        <header class="o__Header grille">
+            <h1 class="logo m6">The Meridian Sun</h1>
+            <div class="m6 grille m-flex">
+                <div class="m6 search flex_1">
+                    <input class="search" type="search" id="site-search" value="Search" aria-label="Search through site content">
+                    <button> <img src="../images/icon-search.png" alt=""> </button>
+                </div>
+                <div class="m6 flex_2 socialNetwork">
+                    <ul>
+                        <li><a href="#"><img src="../images/icon-rss.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/icon-facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/icon-twitter.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/icon-youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/icon-linkedin.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/icon-pinterest.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+
+                <!-- NAVIGATION -->
+                <nav class="menu-m-horizontal xs-displayNone m-displayBlock menu-l-bandeau">
+                    <div class="border_red-dark"></div>
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                    <div class="border_red-dark"></div>
+                </nav>
+
+                <!-- SLECT -->
+                    <form name="Choix" class="m-displayNone">
+                        <select name="Liste" onChange="Lien()" class="select">
+                            <option value="" selected>-- Navigation --</option>
+                            <option value="about.html">About</option>
+                            <option value="index.html">Blog</option>
+                            <option value="contact.html">Contact</option>
+                        </select>
+                    </form>
+                <p class="backHome"> <a href="index.html">Home</a> / <a href="index.html">Photography</a> / A Wonderful Complexity</p>
+        </header>
+
+<!-- SECTION ARTICLES/POST !-->
+        <section  class="grille">
+            <!-- ARTICLE 1 !-->
+            <div class="border"></div>
+            <article class="post" itemscope="itemscope" itemtype="https://schema.org/Thing">
+                <h1 itemprop="name" class="post_titre">A wonderful complexity</h1>
+                    <p class="post_informations">
+                        <img src="../images/icon-gallery.png" alt=""> | <time datetime="2020-05-21">May,21 2020</time>  | Photography | 4 comments
+                    </p>
+                <figure class="index-img">
+                    <img itemprop="image" src="../images/post1.jpg" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p class="post_texte" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p class="post_texte" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p class="post_hashtag"> #photo, #professional</p>
+            </article>
+        </section>
+        <div class="border"></div>
+        <!-- NAV !-->
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a class="lien-post" href="#">Prev Post</a></li>
+                    <li><a class="lien-post" href="#">Next Post</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="border"></div>
+    <!-- RELATED POSTS -->
+        <section class="grille boite_post_related">
+            <h1 class="post_titre post_titre_related">Related posts</h1>
+            <!-- ARTICLE 2 !-->
+            <article class="post post-related xs4">
+                <figure class="index-img">
+                    <img src="../images/post1.jpg" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <h1 class="post_titre post_sous-titre_related">A Wonderful Complexity</h1>
+                <p class="post_informations post_informations_related">
+                    <img src="../images/icon-video.png" alt=""> | <time datetime="2020-05-21">May,21 2020</time>  | Photography | 4 comments
+                </p>
+            </article>
+            <!-- ARTICLE 3 !-->
+
+            <article class="post-related xs4">
+                <iframe class="filtre_NoirEtBlanc" src="https://www.youtube.com/embed/Ks-5NdifH5I"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <h1 class="post_titre post_sous-titre_related">led by a dressed monkey</h1>
+                <p class="post_informations post_informations_related">
+                    <img src="../images/icon-audio.png" alt=""> | <time datetime="2020-05-21">May,21 2020</time>  | Photography | 4 comments
+                </p>
+            </article>
+            <!-- ARTICLE 4 !-->
+
+            <article class="post post-related xs4">
+                <figure class="index-img">
+                    <img src="../images/post2.jpg" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <h1 class="post_titre post_sous-titre_related">A day in the life</h1>
+                <p class="post_informations post_informations_related">
+                    <img src="../images/icon-gallery.png" alt=""> | <time datetime="2020-05-21">May,21 2020</time>  | Photography | 4 comments
+                </p>
+            </article>
+        </section>
+        <div class="border"></div>
+<!-- FOOTER !-->
+        <footer class="footer grille">
+            <div class="footer_item m3">
+                <!-- SEARCH !-->
+                <h2 class="footer_item_titre">Search</h2>
+                <p class="selected">search</p>
+                <!-- RECENT JOBS !-->
+                <h2 class="footer_item_titre">Recent Jobs</h2>
+                <ul class="footer_item_liste">
+                    <li>A Wonderful Complexity</li>
+                    <li>The Meridian Sun</li>
+                    <li>Gallery Format</li>
+                    <li>John Doe</li>
+                    <li>A Day In The Life</li>
+                </ul>
+            </div>
+            <!-- TWITTER !-->
+            <div class="footer_item m3">
+                <h2 class="footer_item_titre">Twitter</h2>
+                <div class="footer_border"></div>
+                <p>&rarr;Follow @IEPSdesign</p>
+            </div>
+            <!-- TAGS !-->
+            <div class="footer_item m3">
+                <h2 class="footer_item_titre">Tags</h2>
+                <p>blogroll <span class="texte-big-size">daily</span> dialog gallery journal link motion music
+                 <span class="texte-big-size">photo</span> <span class="texte-medium-size">professional</span> quotation show sound tv video</p>
+
+            <!-- ARCHIVES !-->
+
+                <h2 class="footer_item_titre">Archives</h2>
+
+                    <ul class="footer_item_liste">
+                        <li><time datetime="2020-05">May 2020</time></li>
+                        <li><time datetime="2020-05">April 2020</time></li>
+                    </ul>
+
+            </div>
+            <!-- ABOUTS !-->
+            <div class="footer_item m3">
+                <h2 class="footer_item_titre">About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </footer>
+        <div class="footer_bottom">
+                    Copyright 2020 - The Meridian Sun
+        </div>
+    </section>
+        <script src = "JS/ieps_framework/select.js"></script>
+    </body>
+</html>

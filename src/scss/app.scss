@@ -1,0 +1,281 @@
+@import 'IEPSframework/modules/variables';
+@import "IEPSframework/modules/menu";
+@import 'IEPSframework/modules/reset';
+@import "IEPSframework/modules/boites";
+@import "IEPSframework/modules/grilles";
+@import "IEPSframework/modules/fonts";
+@import "IEPSframework/modules/posts";
+@import "IEPSframework/modules/forms";
+
+// _____________GENERAL ET DIVERS_____________
+
+#intro {
+    max-width: $boiteTextePosts;
+    width: 90%;
+    margin: auto;
+    padding: 3em 0 3em 0;
+    color: $color-gris-light;
+    font-size: 1.2em;
+}
+
+// PASSAGE EN FLEX DE LA SECTION SEARCH + RSX SOCIAUX
+
+@each $etiquette, $dimension in $breakpoints {
+ @media screen and (min-width: $dimension){
+   .#{$etiquette}-flex {
+       display: flex;
+       flex-direction: row;
+           .flex_1 {
+               order: 2;
+           }
+           .flex_2 {
+                order: 1;
+                margin-top: 3em;
+                padding: 0;
+           }
+       }
+   }
+}
+
+.socialNetwork {
+    margin: auto;
+    padding-top: 2em;
+    img {
+        height: 35px;
+    }
+}
+
+// SEARCH
+
+.search {
+    height: 35px;
+    display: flex;
+    margin: auto;
+    font-family: $font-texte;
+    color: $color-gris-light;
+    font-size: 1em;
+    padding: .5em;
+    width: auto;
+    input {
+        border: solid 2px $color-gris-light;
+    }
+    button {
+        img {
+            width: 15px;
+            height: auto;
+        }
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: $color-noir-page;
+        width: 35px;
+        height: 35px;
+
+    }
+}
+
+.select {
+    width: 300px;
+    height: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: $color-gris-dark;
+    margin-top: 2em;
+}
+
+// BODY
+
+body {
+    text-align: center;
+    margin: 0;
+    a {
+        text-decoration: none;
+    }
+    p {
+        font-family: $font-texte;
+        color: $color-gris-dark;
+    }
+}
+
+.shadow {
+    box-shadow: inset 5px 10px 30px $color-gris-light;
+}
+// logo
+
+.logo {
+    font-family: $font-logo;
+    color: $color-gris-light;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+// HEADER
+
+.o__Header {
+    ul {
+        list-style: none;
+        padding: 0;
+        text-decoration: none;
+        display: flex;
+        width: 40%;
+        li {
+            margin-right: 10px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+// FILTRES
+
+.filtre_NoirEtBlanc {
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    max-height: 500px;
+
+    &_music {
+        filter: grayscale(100%);
+        width: 100%;
+        height: auto;
+    }
+}
+
+// SEPARATIONS
+
+.border {
+    border-bottom: dotted 3px $color-gris-light;
+    margin: auto;
+    width: 90%;
+    max-width: $boiteTextePosts;
+    &_red-dark {
+        border-bottom: dotted 3px $color-border-red-dark;
+        max-width: 100%;
+        margin: 5px;
+
+    }
+}
+
+// DIFFERENTES TAILLES DE TEXTES POUR LE FOOTER
+
+.texte-big-size {
+    font-size: 2em;
+}
+.texte-medium-size {
+    font-size: 1.5em;
+}
+.texte-little-size {
+    font-size: .2em;
+}
+
+.backHome {
+    padding: 3em 0;
+    a {
+        color: $color-red;
+    }
+}
+
+.map {
+    width: 100%;
+    margin-top: 3em;
+}
+
+
+
+// NAV
+
+.nav {
+
+    ul {
+
+        list-style: none;
+        padding: 2em;
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        .lien {
+            background: black;
+            color: $color-gris-light;
+            width: 3em;
+            height: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            }
+        .lien-post {
+            background: $color-gris-dark;
+            color: $blanc;
+            width: 6em;
+            height: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+        text-decoration: none;
+        margin-right: 10px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+}
+
+// FOOTER
+
+.footer {
+    background: $color-background-black;
+    padding: 2em;
+    text-align: left;
+    margin-top: 2em;
+
+    &_border {
+        border-bottom: dotted 3px $color-background-black;
+        max-width: 100%;
+        margin: auto;
+    }
+    &_bottom {
+        margin: 0;
+        color: $color-police-footer;
+        background: black;
+        display: flex;
+        justify-content: center;
+        padding: 1.5em;
+        width: 100%;
+        font-family: $font-texte;
+
+    }
+    &_item {
+        padding: 1em;
+        p {
+            line-height: 2em;
+            font-size: 1.1em;
+        }
+        .selected{
+            background: black;
+            padding: .8em;
+        }
+        &_titre {
+            font-family: $font-titre;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            color: $color-red;
+        }
+
+        &_liste {
+            color: $color-gris-dark;
+            padding: 1em;
+            font-size: 1.3em;
+            line-height: 1.5em;
+        }
+
+
+    }
+}

@@ -1,0 +1,39 @@
+// FORMULAIRE
+
+.form {
+    width: 90%;
+    max-width: $boiteTextePosts;
+    margin: auto;
+    margin-bottom: 2em;
+    background: $color-background-form;
+    padding: 1em 1em 4em 1em;
+    &_element {
+        margin: .5em;
+        padding: 1em;
+        height: 30px;
+        width: 75%;
+        font-family: $font-texte;
+        font-size: 1.4em;
+        color: $color-gris-dark;
+        border: none;
+        display: flex;
+        text-align: left;
+    }
+    .texte {
+        height: 30vh;
+        width: 90%;
+    }
+    .submit {
+        float: left;
+        width: 100px;
+        margin: .5em 0 1em 1em;
+        padding: .5em;
+        height: auto;
+        border-radius: 10px;
+        border: none;
+        color: $blanc;
+        background: $color-gris-dark;
+        font-family: $font-texte;
+        font-size: 1em;
+    }
+}

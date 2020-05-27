@@ -1,0 +1,48 @@
+// BOITE FIXE CENTREE
+
+.boite-fixe-centree {
+    width: 100%;
+    max-width: $boitelargeur;
+    margin: auto;
+}
+
+
+// RESPONSIVE L BODY
+
+// BOITE BACKGROUND BLACK
+ @each $etiquette, $dimension in $breakpoints {
+  @media screen and (min-width: $dimension){
+    .#{$etiquette}-blackBackground {
+            background: $color-background-grey;
+        }
+    }
+}
+
+// BOITE BODY
+
+@each $etiquette, $dimension in $breakpoints {
+ @media screen and (min-width: $dimension){
+   .#{$etiquette}-boiteResponsive {
+
+       width: 100%;
+       max-width: $boiteDimensionsBody;
+       margin: auto;
+       background: white;
+       }
+   }
+}
+
+
+@each $etiquette, $dimension in $breakpoints {
+ @media screen and (min-width: $dimension){
+   .#{$etiquette}-boiteResponsivePosition {
+       position: relative;
+       top: 50px;
+       }
+   }
+}
+
+.boite_post_related {
+    max-width: $boiteTextePosts;
+    margin: auto;
+}

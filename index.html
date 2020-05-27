@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Meridian Sun</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/IEPSframework/index.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="l-blackBackground">
+    <section class="shadow l-boiteResponsive xl-boiteResponsivePosition">
+        <header class="o__Header grille">
+            <h1 class="logo m6">The Meridian Sun</h1>
+            <div class="m6 grille m-flex">
+                <div class="m6 search flex_1">
+                    <input class="search" type="search" id="site-search" value="Search" aria-label="Search through site content">
+                    <button> <img src="../images/icon-search.png" alt=""> </button>
+                </div>
+                <div class="m6 flex_2 socialNetwork">
+                    <ul>
+                        <li><a href="#"><img src="../images/icon-rss.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/icon-facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/icon-twitter.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/icon-youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/icon-linkedin.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/icon-pinterest.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+
+                <!-- NAVIGATION -->
+                <nav class="menu-m-horizontal xs-displayNone m-displayBlock menu-l-bandeau">
+                    <div class="border_red-dark"></div>
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                    <div class="border_red-dark"></div>
+                </nav>
+
+                <!-- SELECT -->
+
+
+                    <form name="Choix" class="m-displayNone">
+                        <select name="Liste" onChange="Lien()" class="select">
+                            <option value="index.html" selected>Blog</option>
+                            <option value="contact.html">Contact</option>
+                            <option value="about.html">About</option>
+
+                        </select>
+                    </form>
+
+
+
+            <p id="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </header>
+
+<!-- SECTION ARTICLES/POST !-->
+        <section  class="grille">
+            <!-- ARTICLE 1 !-->
+            <div class="border"></div>
+            <a href="post.html">
+            <article class="post" itemscope="itemscope" itemtype="https://schema.org/Thing">
+                <h1 itemprop="name" class="post_titre">A wonderful complexity</h1>
+                    <p class="post_informations">
+                        <img src="../images/icon-gallery.png" alt=""> | <time datetime="2020-05-21">May,21 2020</time>  | Photography | 4 comments
+                    </p>
+                <figure class="index-img">
+                    <img itemprop="image" src="../images/post1.jpg" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p class="post_texte" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </article>
+            </a>
+            <!-- ARTICLE 2 !-->
+            <div class="border"></div>
+
+            <article class="post" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+                <h1 itemprop="name" class="post_titre"><a href="post.html">Tripping out | led by a dressed monkey</a></h1>
+                <p class="post_informations">
+                    <img src="../images/icon-video.png" alt=""> | <time itemprop="dateCreated" datetime="2020-05-21">May,21 2020</time>  | Photography | 4 comments
+                </p>
+                <iframe itemprop="video" class="filtre_NoirEtBlanc" src="https://www.youtube.com/embed/Ks-5NdifH5I"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="post_texte" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </article>
+
+            <!-- ARTICLE 3 !-->
+            <div class="border"></div>
+
+            <article class="post" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+                <h1 itemprop="name" class="post_titre"><a href="post.html">Flying pool - goldmine</a></h1>
+                <p class="post_informations">
+                    <img src="../images/icon-audio.png" alt=""> | <time itemprop="dateCreated" datetime="2020-05-21">May,21 2020</time>  | Photography | 4 comments
+                </p>
+                <iframe itemprop="audio" class="filtre_NoirEtBlanc_music" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/717394618&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <p class="post_texte" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </article>
+
+            <!-- ARTICLE 4 !-->
+            <div class="border"></div>
+            <a href="post.html">
+            <article class="post" itemscope="itemscope" itemtype="https://schema.org/Thing">
+                <h1 itemprop="name" class="post_titre">A day in the life</h1>
+                <p class="post_informations">
+                    <img src="../images/icon-gallery.png" alt=""> | <time datetime="2020-05-21">May,21 2020</time>  | Photography | 4 comments
+                </p>
+                <figure class="index-img">
+                    <img itemprop="image" src="../images/post2.jpg" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p class="post_texte" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </article>
+            </a>
+            <div class="border"></div>
+        </section>
+<!-- NAV !-->
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a class="lien" href="#">1</a></li>
+                    <li><a class="lien" href="#">2</a></li>
+                    <li><a class="lien" href="#">3</a></li>
+                </ul>
+            </nav>
+        </div>
+<!-- FOOTER !-->
+<footer class="footer grille">
+    <div class="footer_item m3">
+        <!-- SEARCH !-->
+        <h2 class="footer_item_titre">Search</h2>
+        <p class="selected">search</p>
+        <!-- RECENT JOBS !-->
+        <h2 class="footer_item_titre">Recent Jobs</h2>
+        <ul class="footer_item_liste">
+            <li>A Wonderful Complexity</li>
+            <li>The Meridian Sun</li>
+            <li>Gallery Format</li>
+            <li>John Doe</li>
+            <li>A Day In The Life</li>
+        </ul>
+    </div>
+    <!-- TWITTER !-->
+    <div class="footer_item m3">
+        <h2 class="footer_item_titre">Twitter</h2>
+        <div class="footer_border"></div>
+        <p>&rarr;Follow @IEPSdesign</p>
+    </div>
+    <!-- TAGS !-->
+    <div class="footer_item m3">
+        <h2 class="footer_item_titre">Tags</h2>
+        <p>blogroll <span class="texte-big-size">daily</span> dialog gallery journal link motion music
+         <span class="texte-big-size">photo</span> <span class="texte-medium-size">professional</span> quotation show sound tv video</p>
+
+    <!-- ARCHIVES !-->
+
+        <h2 class="footer_item_titre">Archives</h2>
+
+            <ul class="footer_item_liste">
+                <li><time datetime="2020-05">May 2020</time></li>
+                <li><time datetime="2020-05">April 2020</time></li>
+            </ul>
+
+    </div>
+    <!-- ABOUTS !-->
+    <div class="footer_item m3">
+        <h2 class="footer_item_titre">About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</footer>
+<div class="footer_bottom">
+            Copyright 2020 - The Meridian Sun
+</div>
+
+</section>
+
+<script src = "JS/ieps_framework/select.js"></script>
+    </body>
+</html>

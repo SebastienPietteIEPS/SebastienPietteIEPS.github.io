@@ -1,0 +1,78 @@
+// ARTICLE
+
+.post {
+    &_informations {
+        color: $color-gris-light;
+        padding-bottom: 1em;
+        &_related {
+            text-align: left;
+        }
+    }
+    &_titre {
+        font-family: $font-titre;
+        text-transform: uppercase;
+        font-size: 2em;
+        color: $color-red;
+        margin-bottom: 0;
+        text-decoration: none;
+        &_related {
+            font-size: 2.5em;
+            text-align: left;
+            padding: 0 0 1em .3em ;
+        }
+        a {
+            text-decoration: none;
+            color: $color-red;
+        }
+    }
+    &_sous-titre {
+        font-family: $font-titre;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        color: $color-red;
+        text-align: left;
+        padding: 10px;
+        max-width: $boiteTextePosts;
+        width: 90%;
+        margin: auto;
+        &_related {
+            font-size: 1.3em;
+            text-align: left;
+        }
+    }
+    &_texte {
+        color: $color-gris-dark;
+        padding: 30px 0;
+        text-align: left;
+        max-width: $boiteTextePosts;
+        width: 90%;
+        margin: auto;
+        line-height: 1.5em;
+    }
+    &_hashtag {
+        font-size: .7em;
+        font-family: $font-texte;
+        color: $color-gris-light;
+        text-align: left;
+        padding-bottom: 4em;
+        margin: auto;
+        width: 90%;
+        max-width: $boiteTextePosts;
+    }
+    .index-img {
+        img {
+            width: 100%;
+            height: auto;
+        }
+        margin: 0;
+        padding: 0;
+    }
+    .about-figure {
+        .about-img {
+            max-width: 100%;
+        }
+    }
+    &-related {
+        padding: 1em;
+    }
+}
